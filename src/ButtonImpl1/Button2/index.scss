@@ -1,0 +1,50 @@
+.btn12-action {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #3b8fff;
+  padding: 0;
+  border-radius: 6px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:active {
+    border: none;
+    outline: none;
+    filter: brightness(0.8);
+  }
+
+  &:focus, &:focus-within {
+    outline: none;
+  }
+
+  .btn-text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 16px;
+    box-sizing: border-box;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-progress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+  }
+}
